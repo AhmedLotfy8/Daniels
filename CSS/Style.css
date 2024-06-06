@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 40px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.clr1 {
+    color: rgb(116, 129, 130);
+}
+
+.clr2 {
+    color: #f4f4f4;
+}
+
+.bg1 {
+    background-color: #F7F7F7;
+}
+
+.bg2 {
+    background-color: #1C1C1C;
+}
+
+.bg3 {
+    background-color: #5B5B5B;
+}
+
+.bg4 {
+    background-color: #F4F4F4;
+}
+
+.fam-Mon {
+    font-family: "Montserrat", sans-serif;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* Nav bar*/
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: white !important;
+}
+
+/* Home */
+.Home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.typed-cursor {
+    font-size: 3rem;
+}
+
+
+/* About */
+.About img {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.About .btn1 {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.About .btn1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.About .btn2 {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.About .btn2:hover {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+/* .About img::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 100%;
+    z-index: 2;
+} 
+
+*/
+
+.About .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: black;
+    transition: var(--bs-progress-bar-transition);
+}
+
+/* Services */
+.Services h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Services h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.Services .content .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Services .content:hover .disab {
+    opacity: 100%;
+}
+
+
+/* Portfolio  */
+
+.Portfolio h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Portfolio h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 0 12px;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.portfolio .items .layer {
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all .8s;
+    z-index: 4;
+}
+
+.portfolio .items:hover .layer {
+    bottom: 10%;
+}
+
+.portfolio .items .layer2 {
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all .8s;
+    z-index: 4;
+}
+
+.portfolio .items:hover .layer2 {
+    top: 10%;
+}
+
+.Portfolio .content .it1 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Portfolio .content .it1:hover .disab {
+    opacity: 100%;
+}
+
+.Portfolio .content .it2 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Portfolio .content .it2:hover .disab {
+    opacity: 100%;
+}
+
+.portfolio .items::after {
+    content: '';
+    width: 97%;
+    height: 97%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.portfolio .items:hover::after {
+    opacity: 1;
+}
+
+
+/* Testmonial */
+
+.Testimonial h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Testimonial h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.Testimonial img {
+    width: 70px;
+    height: 70;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(116, 129, 130);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+/* Counter */
+
+
+/* Team */
+.Team h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Team h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.Team .item::before {
+    content: '';
+    width: 97%;
+    height: 97%;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.Team .item:hover::after {
+    opacity: 1;
+}
+
+.Team .content .it1 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Team .content .it1:hover .disab {
+    opacity: 100%;
+}
+
+.Team .content .it2 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Team .content .it2:hover .disab {
+    opacity: 100%;
+}
+
+.Team .content .it3 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Team .content .it3:hover .disab {
+    opacity: 100%;
+}
+
+.Team .content .it4 .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Team .content .it4:hover .disab {
+    opacity: 100%;
+}
+
+.Team .item img {
+    transition-duration: 0.5s;
+}
+
+.Team .item img:hover {
+    transform: scale(1.2);
+}
+
+/* Contact */
+
+.Contact h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Contact h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.Contact .content .disab {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.Contact .content:hover .disab {
+    opacity: 100%;
+}
